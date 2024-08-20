@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .movie-card {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  .movie-detail {
+    padding: 2rem;
+  }
+  
