@@ -1,7 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import css from './MovieDetail.module.css'; // Імпортуйте CSS модулі
 
 function MovieDetail() {
   const { id } = useParams();
@@ -21,15 +21,16 @@ function MovieDetail() {
   };
 
   return (
-    <div className="movie-detail">
-      <h1>{movie.title}</h1>
-      <p>{movie.director}</p>
-      <p>{movie.releaseYear}</p>
-      <p>{movie.favorite ? "Favorite" : "Not Favorite"}</p>
-      <p>{movie.description}</p>
+    <div className={css['movie-detail']}>
+      <h1>Movie Details</h1>
+      <p><strong>Title:</strong> {movie.title}</p>
+      <p><strong>Director:</strong> {movie.director}</p>
+      <p><strong>Release Year:</strong> {movie.releaseYear}</p>
+      <p><strong>Status:</strong> {movie.favorite ? "Favorite" : "Not Favorite"}</p>
       <button onClick={handleEdit}>Edit</button>
     </div>
   );
 }
 
 export default MovieDetail;
+

@@ -1,0 +1,28 @@
+/* Navbar.module.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Optional: Background color for the navbar */
+    padding: 10px 20px; /* Padding around the navbar */
+  }
+  
+  .navList {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    gap: 20px; /* Increase the space between menu items */
+  }
+  
+  .navItem {
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .navLink {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Color of the links */
+  }
+  
+  .navLink:hover {
+    text-decoration: underline; /* Optional: Underline on hover */
+  }
+  
