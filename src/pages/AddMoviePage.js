@@ -1,5 +1,5 @@
 import React from 'react';
-import MovieForm from '../components/MovieForm';
+import MovieForm from '../components/MovieForm/MovieForm';
 
 function AddMoviePage() {
   return (

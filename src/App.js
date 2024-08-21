@@ -1,11 +1,10 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import Navbar from './components/Navbar/Navbar';
+import HomePage from './components/HomePage/HomePage';
 import MoviePage from './pages/MoviePage';
 import AddMoviePage from './pages/AddMoviePage';
-import Navbar from './components/Navbar';
 import NotFoundPage from './pages/NotFoundPage';
-import EditMoviePage from './pages/EditMoviePage'; // Import the new page
+import EditMoviePage from './pages/EditMoviePage';
 
 function App() {
   return (

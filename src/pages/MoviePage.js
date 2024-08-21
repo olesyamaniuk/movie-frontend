@@ -1,11 +1,9 @@
-import React from 'react';
-import MovieDetail from '../components/MovieDetail'; 
+import MovieDetail from "../components/MovieDetail/MovieDetail";
 
 function MoviePage() {
   return (
     <div>
       <MovieDetail />
-     
     </div>
   );
 }

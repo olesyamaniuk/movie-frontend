@@ -44,7 +44,7 @@
     margin: 0 5px;
     border: none;
     cursor: pointer;
-    min-width: 100px; /* Ensures buttons have a minimum width */
+    min-width: 100px; 
     text-align: center;
   }
   
@@ -62,7 +62,6 @@
     opacity: 0.8;
   }
   
-  /* Ensures buttons are aligned in a column */
   .movieActions {
     display: flex;
     flex-direction: column;
