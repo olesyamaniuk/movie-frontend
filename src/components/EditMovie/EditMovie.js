@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -16,10 +16,10 @@ function EditMovie() {
       .catch(error => console.error('Error fetching movie:', error));
   }, [id]);
 
-  const handleSubmit = (values) => {
-    const { _id, createdAt, updatedAt, ...updateData } = values;
+  const handleSubmit = () => {
+    // const { createdAt, updatedAt, ...updateData } = values;
 
-    axios.put(`https://movie-backend-3.onrender.com/api/movies/${id}`, updateData)
+    axios.put(`https://movie-backend-3.onrender.com/api/movies/${id}`)
       .then(() => navigate(`/movies/${id}`))
       .catch(error => {
         console.error('Error updating movie:', error.response ? error.response.data : error.message);
