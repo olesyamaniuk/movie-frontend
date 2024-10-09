@@ -22,6 +22,7 @@ function MovieForm({ initialData = {}, isEdit = false }) {
 
   return (
     <div className={css['form-container']}>
+      <h1 className={css.text}>Add New Movie</h1>
       <Formik
         initialValues={initialData}
         validationSchema={MovieSchema}

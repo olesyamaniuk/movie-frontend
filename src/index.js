@@ -1,4 +1,3 @@
-
 import 'modern-normalize/modern-normalize.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
